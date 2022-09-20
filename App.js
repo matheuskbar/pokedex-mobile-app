@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StatusBar, LogBox } from 'react-native';
+
+import { NavigationContainer } from '@react-navigation/native';
+
+import ApiProvider from './src/contexts/api';
+import Routes from './src/routes';
 
 export default function App() {
+  LogBox.ignoreAllLogs();
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ApiProvider>
+      <NavigationContainer>
+        <StatusBar backgroundColor='#2C2C2C' barStyle='light-content'/>
+        <Routes/>
+      </NavigationContainer>
+    </ApiProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
