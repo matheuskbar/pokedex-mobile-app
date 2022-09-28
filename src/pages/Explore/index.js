@@ -33,7 +33,7 @@ export default function Explore({ route }) {
                     let pokemon = {
                         name: response.data.name,
                         id: response.data.id,
-                        image: response.data.sprites.other.home.front_default,
+                        image: response.data.sprites.other["official-artwork"].front_default,
                         types: response.data.types,
                         abilities: response.data.abilities,
                         stats: response.data.stats,

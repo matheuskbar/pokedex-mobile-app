@@ -41,7 +41,7 @@ export default function Search() {
             let pokemonResponse = {
                 name: value.data.name,
                 id: value.data.id,
-                image: value.data.sprites.other.home.front_default,
+                image: value.data.sprites.other["official-artwork"].front_default,
                 types: value.data.types,
                 abilities: value.data.abilities,
                 stats: value.data.stats,
