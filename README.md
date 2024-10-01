@@ -2,7 +2,7 @@
 </br>
 <p>
   Meu primeiro app mobile próprio. Integração com a API Pokémon https://pokeapi.co.
-  Permite vizualizar informações sobre os Pokémons, suas características, habilidades e evoluções.
+  Permite visualizar informações sobre os Pokémons, suas características, habilidades e evoluções.
   Explore por categorias ou simplesmente pela lista da pokédex.
 </p>
 
